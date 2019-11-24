@@ -1,9 +1,9 @@
 import java.util.HashSet;
 
-class Solution {
+class FindDuplicatesInArray {
     public static boolean containsDuplicate(int[] nums) {
         
-        HashSet<Integer> set = new HashSet();
+        HashSet<Integer> set = new HashSet<>();
         
         for (int i = 0; i< nums.length; i++){
             if (set.contains(nums[i])){
