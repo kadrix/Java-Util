@@ -1,5 +1,7 @@
+import java.util.HashSet;
+
 class Solution {
-    public static boolean isPermute(int[] nums) {
+    public static boolean containsDuplicate(int[] nums) {
         
         HashSet<Integer> set = new HashSet();
         
@@ -17,7 +19,7 @@ class Solution {
 
     public static void main(String[] args) {
         int[] nums = {1,2,3,1};
-        isPermute(nums);
+        containsDuplicate(nums);
 
     }
 }
