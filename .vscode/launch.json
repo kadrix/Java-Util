@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - ReplaceSpacesInString",
+            "request": "launch",
+            "mainClass": "ReplaceSpacesInString",
+            "projectName": "Util_efdaeea2"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - FindDuplicatesInArray",
             "request": "launch",
             "mainClass": "FindDuplicatesInArray",
