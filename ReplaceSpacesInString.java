@@ -13,7 +13,14 @@ class ReplaceSpacesInString {
             strLen--;
         }
         
-        char[] modifiedStr = new char[trueLength+3*count];
+        int finalLen = trueLength+(3*count);
+
+        //start from end and fill it in
+
+        char[] modifiedStr = new char[finalLen];
+
+        modifiedStr[trueLength+3*count-1] = '\0';
+
 
         
         System.out.println(inputStr);
