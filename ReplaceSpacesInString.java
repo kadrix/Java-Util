@@ -1,34 +1,36 @@
 class ReplaceSpacesInString {
     public static void URLify(String inputStr, int trueLength) {
+        if (inputStr == null)
+            throw new IllegalArgumentException();
         int count = 0;
-        int strLen = inputStr.length();
+        int finalLen = 0;
         char[] charStr = inputStr.toCharArray();
-        for (char c : charStr){
-            if (c == ' '){
-                count ++;
+        for (int i = 0; i < trueLength; i++) {
+            if (charStr[i] == ' ') {
+                count++;
             }
         }
-        while (charStr[strLen-1] == ' '){
-            count--;
-            strLen--;
+
+        finalLen = trueLength + 2 * count - 1;
+        System.out.println(finalLen);
+        System.out.println(count);
+        // start from end and fill it in
+
+        for (int i = trueLength - 1; i >= 0; i--) {
+            if (charStr[i] == ' ') {
+                charStr[finalLen] = '0';
+                charStr[finalLen - 1] = '2';
+                charStr[finalLen - 2] = '%';
+                finalLen -= 3;
+            } else {
+                System.out.println(charStr[finalLen]);
+                System.out.println(charStr[i]);
+
+                charStr[finalLen] = charStr[i];
+                finalLen--;
+            }
         }
-        
-        int finalLen = trueLength+(3*count);
-
-        //start from end and fill it in
-
-        char[] modifiedStr = new char[finalLen];
-
-        modifiedStr[trueLength+3*count-1] = '\0';
-
-
-        
-        System.out.println(inputStr);
-        inputStr = inputStr.trim();
-        System.out.println(inputStr);
-        inputStr = inputStr.replaceAll("\\s", "%20");
-        System.out.println(inputStr);
-
+        System.out.println(new String(charStr).trim());
     }
 
     public static void main(String[] args) {
