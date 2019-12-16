@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - CheckIfPermutationsIsPalindrome",
+            "request": "launch",
+            "mainClass": "CheckIfPermutationsIsPalindrome",
+            "projectName": "Util_efdaeea2"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - ReplaceSpacesInString",
             "request": "launch",
             "mainClass": "ReplaceSpacesInString",
