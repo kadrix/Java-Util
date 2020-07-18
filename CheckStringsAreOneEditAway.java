@@ -8,7 +8,7 @@ class CheckStringsAreOneEditAway {
       return false;
     }
     
-    int count = 0;
+    //int count = 0;
 
     
 

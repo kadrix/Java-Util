@@ -6,6 +6,48 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - groupAnagrams",
+            "request": "launch",
+            "mainClass": "groupAnagrams",
+            "projectName": "Util_efdaeea2"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MergeTwoSortedArrays",
+            "request": "launch",
+            "mainClass": "MergeTwoSortedArrays",
+            "projectName": "Util_efdaeea2"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - DuplicateZeros",
+            "request": "launch",
+            "mainClass": "DuplicateZeros",
+            "projectName": "Util_efdaeea2"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - findMaxConsecutiveOnes",
+            "request": "launch",
+            "mainClass": "findMaxConsecutiveOnes",
+            "projectName": "Util_efdaeea2"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MeasureForLoop",
+            "request": "launch",
+            "mainClass": "lamda.MeasureForLoop",
+            "projectName": "Util_efdaeea2"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ZakoProb",
+            "request": "launch",
+            "mainClass": "ZakoProb",
+            "projectName": "Util_efdaeea2"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - CheckStringsAreOneEditAway",
             "request": "launch",
             "mainClass": "CheckStringsAreOneEditAway",

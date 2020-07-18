@@ -18,8 +18,10 @@ class FindDuplicatesInArray {
     }
 
     public static void main(String[] args) {
-        int[] nums = {1,2,3,1};
-        containsDuplicate(nums);
+       int[] arr = {2, 2, 5, 9};
+       boolean result = containsDuplicate(arr);
+
+       System.out.println(result);
 
     }
 }
